@@ -4,8 +4,14 @@
 
 > Jump to the local IDE source code while clicking the element of the browser automatically.
 
-
 https://user-images.githubusercontent.com/43719490/223932417-35b4195a-71cd-4df1-a448-2d269ecbddcf.mp4
+
+## TODO
+
+- [x] Support Vue
+- [x] Support React
+- [ ] Support PReact
+- [ ] Support Svelte
 
 ## Install
 

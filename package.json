@@ -32,6 +32,7 @@
     "build": "tsup",
     "prepublishOnly": "pnpm run build",
     "play:vue3": "pnpm -C playground/vue3 run dev",
+    "play:vue-router": "pnpm -C playground/vue-router run dev",
     "play:vue2": "pnpm -C playground/vue2 run dev",
     "play:react": "pnpm -C playground/react run dev",
     "play:preact": "pnpm -C playground/preact run dev",

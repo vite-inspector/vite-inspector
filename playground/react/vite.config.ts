@@ -8,6 +8,8 @@ export default defineConfig({
   plugins: [
     React(),
     Inspect(),
-    OpenIde(),
+    OpenIde({
+      framework:'react'
+    }),
   ],
 })

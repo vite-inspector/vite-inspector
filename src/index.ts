@@ -1,16 +1,13 @@
 import type { Plugin } from 'vite'
-import fs from 'fs-extra'
 import { transform, middleware, injectScript } from './coer'
+import { VitePluginOpenIdeOptions } from './type'
 
-export interface  VitePluginInspectorOptions {
-  route?: string
+const DEFAULT_INSPECTOR_OPTIONS:VitePluginOpenIdeOptions = {
+  route:'/open-editor',
+  framework: 'vue',
 }
 
-const DEFAULT_INSPECTOR_OPTIONS:VitePluginInspectorOptions = {
-  route:'/open-editor'
-}
-
-export default function (options?:VitePluginInspectorOptions): Plugin {
+export default function (options?:VitePluginOpenIdeOptions): Plugin {
   // 合并默认参数
   const normalizedOptions = { ...DEFAULT_INSPECTOR_OPTIONS, ...options }
   // 文件路径太长，影响页面dom查看效率，使用路径对应6位hash值较为美观
@@ -35,7 +32,7 @@ export default function (options?:VitePluginInspectorOptions): Plugin {
     },
     //@ts-ignore
     transform(code, id) {
-      const { code: newCode } = transform(fs.readFileSync(id,'utf-8'), id)
+      const { code: newCode } = transform(code, id, options!.framework)
       return newCode
     },
   }

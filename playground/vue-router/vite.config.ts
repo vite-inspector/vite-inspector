@@ -53,7 +53,9 @@ export default defineConfig({
     // see unocss.config.ts for config
     UnoCss(),
     Inspect(),
-    OpenIde(),
+    OpenIde({
+      framework:'vue'
+    }),
   ],
   test: {
     environment: 'happy-dom',

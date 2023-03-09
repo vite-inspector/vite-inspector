@@ -37,6 +37,7 @@
     "play:react": "pnpm -C playground/react run dev",
     "play:preact": "pnpm -C playground/preact run dev",
     "play:svelte": "pnpm -C playground/svelte run dev",
+    "play:solid": "pnpm -C playground/solid run dev",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "release": "bumpp package.json --commit --push --tag && pnpm -r publish --access public"

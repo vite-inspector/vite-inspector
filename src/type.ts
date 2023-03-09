@@ -1,3 +1,4 @@
-export default interface VitePluginOpenIdeOptions {
-  route?: string
+export interface VitePluginOpenIdeOptions {
+  route?: string,
+  framework: 'react' | 'vue' | 'solid' | 'preact'
 }

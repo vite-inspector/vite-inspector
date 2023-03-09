@@ -1,4 +1,5 @@
 import path from 'node:path'
+import fs from 'fs-extra'
 import compilerVue from './compiler/vue'
 import compileSvelte from './compiler/svelte'
 
@@ -39,19 +40,19 @@ function generate(id: string, code: string, html?: { content: string; start: num
 
 }
 // eslint-disable-next-line unused-imports/no-unused-vars
-function transform(code: string, id: string, options = { serializePath: true }) {
-  const extname = path.extname(id)
+function transform(code: string, id: string, framework:string, options = { serializePath: true }) {
+  // const extname = path.extname(id)
   let result
-  switch (extname) {
-    case '.vue':
-      result = generate(id, code, compilerVue(code))
+  switch (framework) {
+    case 'vue':
+      result = generate(id, fs.readFileSync(id,'utf-8'), compilerVue(fs.readFileSync(id,'utf-8')))
       break
-    case '.jsx':
-    case '.tsx':
+    case 'react':
+    case 'preact':
+      result = generate(id, fs.readFileSync(id,'utf-8'))
+      break
+    case 'solid':
       result = generate(id, code)
-      break
-    case '.svelte':
-      result = generate(id, code, compileSvelte(code))
       break
     default:
       result = { id, code }

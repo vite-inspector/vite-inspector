@@ -1,5 +1,6 @@
 import path from 'node:path'
-import compiler from './compiler/vue'
+import compilerVue from './compiler/vue'
+import compileSvelte from './compiler/svelte'
 
 function addHtmlAttr(filename: string, line: string, loc: number) {
   // match a single div, no attr <div></div>
@@ -8,7 +9,6 @@ function addHtmlAttr(filename: string, line: string, loc: number) {
   const htmlTagReg2 = /<(\w+)\s+([\w|:])/g
   // stitching html parameters fileName: location
   const replaceValue = `<$1 data-loc="${filename.replace(cwd, '')}:${loc}" $2`
-
   const result = line.replace(htmlTagReg2, replaceValue)
     .replace(htmlTagReg1, replaceValue)
   return result
@@ -36,6 +36,7 @@ function generate(id: string, code: string, html?: { content: string; start: num
     id,
     code: templateBeforeContent + newTemplateContent + templateAfterContent,
   }
+
 }
 // eslint-disable-next-line unused-imports/no-unused-vars
 function transform(code: string, id: string, options = { serializePath: true }) {
@@ -43,12 +44,14 @@ function transform(code: string, id: string, options = { serializePath: true }) 
   let result
   switch (extname) {
     case '.vue':
-      result = generate(id, code, compiler(code))
+      result = generate(id, code, compilerVue(code))
       break
     case '.jsx':
     case '.tsx':
-    case '.svelte':
       result = generate(id, code)
+      break
+    case '.svelte':
+      result = generate(id, code, compileSvelte(code))
       break
     default:
       result = { id, code }

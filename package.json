@@ -42,11 +42,13 @@
     "release": "bumpp package.json --commit --push --tag && pnpm -r publish --access public"
   },
   "dependencies": {
+    "fs-extra": "^11.1.0",
     "kolorist": "^1.7.0",
     "shell-quote": "^1.8.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.36.0",
+    "@types/fs-extra": "^11.0.1",
     "@types/node": "^18.14.6",
     "@types/shell-quote": "^1.7.1",
     "bumpp": "^9.0.0",

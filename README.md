@@ -10,7 +10,7 @@ https://user-images.githubusercontent.com/43719490/223932417-35b4195a-71cd-4df1-
 
 - [x] Support Vue
 - [x] Support React
-- [ ] Support PReact
+- [x] Support PReact
 - [ ] Support Svelte
 
 ## Install

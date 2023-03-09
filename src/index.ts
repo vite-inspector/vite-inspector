@@ -1,20 +1,20 @@
 import type { Plugin } from 'vite'
-import { bold, dim, green, white } from 'kolorist'
-import { injectScript, middleware, transform } from './coer'
-import type VitePluginOpenIdeOptions from './type'
+import fs from 'fs-extra'
+import { transform, middleware, injectScript } from './coer'
 
-const DEFAULT_INSPECTOR_OPTIONS: VitePluginOpenIdeOptions = {
-  route: '/open-ide',
+export interface  VitePluginInspectorOptions {
+  route?: string
 }
 
-const toggleComboKeysMap = {
-  command: process.platform === 'darwin' ? 'Command(⌘)' : 'Ctrl(^)',
+const DEFAULT_INSPECTOR_OPTIONS:VitePluginInspectorOptions = {
+  route:'/open-editor'
 }
 
-export default function (options?: VitePluginOpenIdeOptions): Plugin {
-  // merge default parameters
+export default function (options?:VitePluginInspectorOptions): Plugin {
+  // 合并默认参数
   const normalizedOptions = { ...DEFAULT_INSPECTOR_OPTIONS, ...options }
-  // the file path is too long, which affects the viewing efficiency of the page dom. It is more beautiful to use the path corresponding to the 6-digit hash value
+  // 文件路径太长，影响页面dom查看效率，使用路径对应6位hash值较为美观
+  // const filePathMap = new Map()
   return {
     name: 'vite-plugin-open-ide',
     enforce: 'pre',
@@ -29,18 +29,13 @@ export default function (options?: VitePluginOpenIdeOptions): Plugin {
         }]
       },
     },
-    configureServer(server) {
-      // @ts-expect-error error
-      server.middlewares.use(normalizedOptions.route, middleware)
-      const _print = server.printUrls
-      server.printUrls = () => {
-        _print()
-        // eslint-disable-next-line no-console
-        console.log(`  ${dim(green('➜'))}  ${dim(bold('Open-IDE: '))} ${white(`${toggleComboKeysMap.command}`)} ${dim('+ click element to open in IDE')}`)
-      }
+    configureServer({ middlewares }) {
+      //@ts-expect-error
+      middlewares.use(normalizedOptions.route, middleware)
     },
+    //@ts-ignore
     transform(code, id) {
-      const { code: newCode } = transform(code, id)
+      const { code: newCode } = transform(fs.readFileSync(id,'utf-8'), id)
       return newCode
     },
   }

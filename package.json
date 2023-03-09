@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-open-ide",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Jump to the local IDE source code while clicking the element of the browser automatically.",
   "author": "Elone Hoo <hi@elonehoo.me>",
   "license": "MIT",

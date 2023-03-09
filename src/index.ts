@@ -1,21 +1,20 @@
 import type { Plugin } from 'vite'
-import { bold ,green, dim, white } from 'kolorist'
-import { transform, middleware, injectScript } from './coer'
-import VitePluginOpenIdeOptions from './type'
+import { bold, dim, green, white } from 'kolorist'
+import { injectScript, middleware, transform } from './coer'
+import type VitePluginOpenIdeOptions from './type'
 
-const DEFAULT_INSPECTOR_OPTIONS:VitePluginOpenIdeOptions = {
-  route:'/open-ide'
+const DEFAULT_INSPECTOR_OPTIONS: VitePluginOpenIdeOptions = {
+  route: '/open-ide',
 }
 
 const toggleComboKeysMap = {
   command: process.platform === 'darwin' ? 'Command(⌘)' : 'Ctrl(^)',
 }
 
-export default function (options?:VitePluginOpenIdeOptions): Plugin {
-  // 合并默认参数
+export default function (options?: VitePluginOpenIdeOptions): Plugin {
+  // merge default parameters
   const normalizedOptions = { ...DEFAULT_INSPECTOR_OPTIONS, ...options }
-  // 文件路径太长，影响页面dom查看效率，使用路径对应6位hash值较为美观
-  // const filePathMap = new Map()
+  // the file path is too long, which affects the viewing efficiency of the page dom. It is more beautiful to use the path corresponding to the 6-digit hash value
   return {
     name: 'vite-plugin-open-ide',
     enforce: 'pre',
@@ -31,7 +30,7 @@ export default function (options?:VitePluginOpenIdeOptions): Plugin {
       },
     },
     configureServer(server) {
-      //@ts-ignore
+      // @ts-expect-error error
       server.middlewares.use(normalizedOptions.route, middleware)
       const _print = server.printUrls
       server.printUrls = () => {

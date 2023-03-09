@@ -7,6 +7,6 @@ export default function compileVue(code: string) {
   return {
     start,
     end,
-    content: code.substring(start, end)
+    content: code.substring(start, end),
   }
 }

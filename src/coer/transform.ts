@@ -1,13 +1,12 @@
-import path from 'path'
+import path from 'node:path'
 import compiler from './compiler/vue'
 
-
 function addHtmlAttr(filename: string, line: string, loc: number) {
-  // 匹配单个div,无attr  <div></div>
+  // match a single div, no attr <div></div>
   const cwd = process.cwd()
   const htmlTagReg1 = /<(\w+)(\s*>)/g
   const htmlTagReg2 = /<(\w+)\s+([\w|:])/g
-  // 拼接html参数 fileName:位置
+  // stitching html parameters fileName: location
   const replaceValue = `<$1 data-loc="${filename.replace(cwd, '')}:${loc}" $2`
 
   const result = line.replace(htmlTagReg2, replaceValue)
@@ -15,30 +14,30 @@ function addHtmlAttr(filename: string, line: string, loc: number) {
   return result
 }
 
-function generate(id: string, code: string, html?: { content: string, start: number, end: number }) {
-  // 如果没有传入模板，则解析文件全部内容
+function generate(id: string, code: string, html?: { content: string; start: number; end: number }) {
+  // if no template is passed in, the entire content of the file will be parsed
   if (!html) {
     html = {
       content: code,
       start: 0,
-      end: code.length
+      end: code.length,
     }
   }
-  // 换行reg
+  // newline reg
   const lineEndReg = /\r?\n/
   const { content, start, end } = html
   const templateBeforeContent = code.substring(0, start)
   const templateAfterContent = code.substring(end!)
-  // 计算template开始行号
+  // calculate the template start line number
   const templateLineStartNumber = templateBeforeContent.split(lineEndReg).length
-  // 给 html tag 添加 data-loc 属性 <div></div> --> <div data-loc="10"></div>
+  // Add data-loc attribute to html tag <div></div> --> <div data-loc="10"></div>
   const newTemplateContent = content.split(lineEndReg).map((line, i) => addHtmlAttr(id, line, i + templateLineStartNumber)).join('\n')
   return {
-    id: id,
+    id,
     code: templateBeforeContent + newTemplateContent + templateAfterContent,
   }
 }
-
+// eslint-disable-next-line unused-imports/no-unused-vars
 function transform(code: string, id: string, options = { serializePath: true }) {
   const extname = path.extname(id)
   let result

@@ -37,8 +37,11 @@
     "play:svelte": "pnpm -C playground/svelte run dev",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "typecheck": "tsc --noEmit",
     "release": "bumpp package.json --commit --push --tag && pnpm -r publish --access public"
+  },
+  "dependencies": {
+    "kolorist": "^1.7.0",
+    "shell-quote": "^1.8.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.36.0",
@@ -49,9 +52,5 @@
     "tsup": "^6.6.3",
     "typescript": "^4.9.5",
     "vite": "^4.1.4"
-  },
-  "dependencies": {
-    "kolorist": "^1.7.0",
-    "shell-quote": "^1.8.0"
   }
 }

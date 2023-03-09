@@ -7,6 +7,6 @@ export default defineConfig({
   plugins: [
     Preact(),
     Inspect(),
-    OpenIde()
+    OpenIde(),
   ],
 })

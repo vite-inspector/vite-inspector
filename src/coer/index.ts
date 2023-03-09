@@ -4,5 +4,5 @@ import injectScript from './inject-script'
 export {
   injectScript,
   transform,
-  middleware
+  middleware,
 }

@@ -1,4 +1,4 @@
-import VitePluginOpenIdeOptions from '../type'
+import type VitePluginOpenIdeOptions from '../type'
 export default function (options: VitePluginOpenIdeOptions) {
   return `
 (function () {

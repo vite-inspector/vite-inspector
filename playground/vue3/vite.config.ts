@@ -8,6 +8,6 @@ export default defineConfig({
   plugins: [
     Vue(),
     Inspect(),
-    OpenIde()
+    OpenIde(),
   ],
 })

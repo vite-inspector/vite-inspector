@@ -1,3 +1,3 @@
-export default interface  VitePluginOpenIdeOptions {
+export default interface VitePluginOpenIdeOptions {
   route?: string
 }

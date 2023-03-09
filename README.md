@@ -30,7 +30,9 @@ import OpenIde from 'vite-plugin-open-ide'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    OpenIde(),
+    OpenIde({
+      framework: 'react' | 'vue' | 'solid' | 'preact' | 'svelte'
+    }),
   ]
 })
 ```

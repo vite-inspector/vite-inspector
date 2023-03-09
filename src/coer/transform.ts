@@ -66,7 +66,7 @@ function transform(code: string, id: string, framework: 'react' | 'vue' | 'solid
   else if (framework === 'svelte') {
     switch (extname) {
       case '.svelte':
-        result = generate(id, fs.readFileSync(id, 'utf-8'), compileSvelte(fs.readFileSync(id, 'utf-8')))
+        result = generate(id, code, compileSvelte(fs.readFileSync(id, 'utf-8')))
         break
       default:
         result = { id, code }

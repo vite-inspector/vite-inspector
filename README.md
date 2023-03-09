@@ -16,7 +16,7 @@ pnpm install vite-plugin-open-ide -D
 ## Config
 
 ```ts
-//vite.config.ts
+// vite.config.ts
 import { defineConfig } from 'vite'
 import OpenIde from 'vite-plugin-open-ide'
 

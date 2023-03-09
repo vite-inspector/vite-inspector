@@ -37,10 +37,9 @@ function generate(id: string, code: string, html?: { content: string; start: num
     id,
     code: templateBeforeContent + newTemplateContent + templateAfterContent,
   }
-
 }
 // eslint-disable-next-line unused-imports/no-unused-vars
-function transform(code: string, id: string, framework:'react' | 'vue' | 'solid' | 'preact' | 'svelte' , options = { serializePath: true }) {
+function transform(code: string, id: string, framework: 'react' | 'vue' | 'solid' | 'preact' | 'svelte', options = { serializePath: true }) {
   const extname = path.extname(id)
   let result
   switch (extname) {
@@ -49,12 +48,12 @@ function transform(code: string, id: string, framework:'react' | 'vue' | 'solid'
       break
     case '.jsx':
     case '.tsx':
-      result = generate(id, fs.readFileSync(id,'utf-8'))
+      result = generate(id, fs.readFileSync(id, 'utf-8'))
       break
     default:
       result = { id, code }
   }
-  if(framework ==='solid'){
+  if (framework === 'solid') {
     switch (extname) {
       case '.jsx':
       case '.tsx':
@@ -63,15 +62,15 @@ function transform(code: string, id: string, framework:'react' | 'vue' | 'solid'
       default:
         result = { id, code }
     }
-  }else if(framework ==='svelte'){
+  }
+  else if (framework === 'svelte') {
     switch (extname) {
       case '.svelte':
-        result = generate(id, fs.readFileSync(id,'utf-8'), compileSvelte(fs.readFileSync(id,'utf-8')))
+        result = generate(id, fs.readFileSync(id, 'utf-8'), compileSvelte(fs.readFileSync(id, 'utf-8')))
         break
-        default:
-          result = { id, code:fs.readFileSync(id,'utf-8') }
+      default:
+        result = { id, code: fs.readFileSync(id, 'utf-8') }
     }
-
   }
   return result
 }

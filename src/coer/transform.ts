@@ -40,22 +40,38 @@ function generate(id: string, code: string, html?: { content: string; start: num
 
 }
 // eslint-disable-next-line unused-imports/no-unused-vars
-function transform(code: string, id: string, framework:string, options = { serializePath: true }) {
-  // const extname = path.extname(id)
+function transform(code: string, id: string, framework:'react' | 'vue' | 'solid' | 'preact' | 'svelte' , options = { serializePath: true }) {
+  const extname = path.extname(id)
   let result
-  switch (framework) {
-    case 'vue':
-      result = generate(id, fs.readFileSync(id,'utf-8'), compilerVue(fs.readFileSync(id,'utf-8')))
+  switch (extname) {
+    case '.vue':
+      result = generate(id, code, compilerVue(code))
       break
-    case 'react':
-    case 'preact':
+    case '.jsx':
+    case '.tsx':
       result = generate(id, fs.readFileSync(id,'utf-8'))
-      break
-    case 'solid':
-      result = generate(id, code)
       break
     default:
       result = { id, code }
+  }
+  if(framework ==='solid'){
+    switch (extname) {
+      case '.jsx':
+      case '.tsx':
+        result = generate(id, code)
+        break
+      default:
+        result = { id, code }
+    }
+  }else if(framework ==='svelte'){
+    switch (extname) {
+      case '.svelte':
+        result = generate(id, fs.readFileSync(id,'utf-8'), compileSvelte(fs.readFileSync(id,'utf-8')))
+        break
+        default:
+          result = { id, code:fs.readFileSync(id,'utf-8') }
+    }
+
   }
   return result
 }

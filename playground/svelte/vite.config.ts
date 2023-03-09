@@ -8,6 +8,8 @@ export default defineConfig({
   plugins: [
     svelte(),
     Inspect(),
-    OpenIde(),
+    OpenIde({
+      framework: 'svelte',
+    }),
   ],
 })

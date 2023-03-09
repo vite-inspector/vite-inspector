@@ -1,4 +1,4 @@
 export interface VitePluginOpenIdeOptions {
   route?: string,
-  framework: 'react' | 'vue' | 'solid' | 'preact'
+  framework: 'react' | 'vue' | 'solid' | 'preact' | 'svelte'
 }

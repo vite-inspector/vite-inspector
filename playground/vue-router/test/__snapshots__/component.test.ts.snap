@@ -1,0 +1,11 @@
+// Vitest Snapshot v1
+
+exports[`TheCounter.vue > should render 1`] = `
+"<div inline-flex=\\"\\" m=\\"y-3\\"><button class=\\"dec\\" btn=\\"\\" p-2=\\"\\" rounded-full=\\"\\">
+    <div i-carbon-subtract=\\"\\"></div>
+  </button>
+  <div font=\\"mono\\" w=\\"15\\" m-auto=\\"\\" inline-block=\\"\\">10</div><button class=\\"inc\\" btn=\\"\\" p-2=\\"\\" rounded-full=\\"\\">
+    <div i-carbon-add=\\"\\"></div>
+  </button>
+</div>"
+`;

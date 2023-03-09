@@ -1,0 +1,57 @@
+{
+  "name": "vite-plugin-open-ide",
+  "version": "0.0.0",
+  "description": "Jump to the local IDE source code while clicking the element of the browser automatically.",
+  "author": "Elone Hoo <hi@elonehoo.me>",
+  "license": "MIT",
+  "homepage": "https://github.com/wip-elonehoo/vite-plugin-open-ide#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wip-elonehoo/vite-plugin-open-ide"
+  },
+  "bugs": "https://github.com/wip-elonehoo/vite-plugin-open-ide/issues",
+  "keywords": [
+    "vite-plugin",
+    "jump-ide"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "play:vue3": "pnpm -C playground/vue3 run dev",
+    "play:vue2": "pnpm -C playground/vue2 run dev",
+    "play:react": "pnpm -C playground/react run dev",
+    "play:preact": "pnpm -C playground/preact run dev",
+    "play:svelte": "pnpm -C playground/svelte run dev",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp package.json --commit --push --tag && pnpm -r publish --access public"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.36.0",
+    "@types/node": "^18.14.6",
+    "@types/shell-quote": "^1.7.1",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.35.0",
+    "tsup": "^6.6.3",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4"
+  },
+  "dependencies": {
+    "kolorist": "^1.7.0",
+    "shell-quote": "^1.8.0"
+  }
+}

@@ -30,6 +30,7 @@
   "scripts": {
     "dev": "tsup --watch",
     "build": "tsup",
+    "prepublishOnly": "pnpm run build",
     "play:vue3": "pnpm -C playground/vue3 run dev",
     "play:vue2": "pnpm -C playground/vue2 run dev",
     "play:react": "pnpm -C playground/react run dev",

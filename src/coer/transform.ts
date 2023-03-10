@@ -1,7 +1,6 @@
 import path from 'node:path'
 import fs from 'fs-extra'
 import compilerVue from './compiler/vue'
-import compileSvelte from './compiler/svelte'
 
 function addHtmlAttr(filename: string, line: string, loc: number) {
   // match a single div, no attr <div></div>
@@ -66,7 +65,7 @@ function transform(code: string, id: string, framework: 'react' | 'vue' | 'solid
   else if (framework === 'svelte') {
     switch (extname) {
       case '.svelte':
-        result = generate(id, code, compileSvelte(fs.readFileSync(id, 'utf-8')))
+        result = generate(id, fs.readFileSync(id, 'utf-8'))
         break
       default:
         result = { id, code }

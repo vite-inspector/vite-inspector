@@ -30,6 +30,120 @@ https://user-images.githubusercontent.com/43719490/223932417-35b4195a-71cd-4df1-
 pnpm install vite-plugin-open-ide -D
 ```
 
+<details>
+<summary>Vue2</summary><br>
+
+```ts
+// vite.config.ts
+import { defineConfig } from 'vite'
+import Vue from '@vitejs/plugin-vue2'
+import OpenIde from 'vite-plugin-open-ide'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [
+    Vue(),
+    OpenIde({
+      framework:'vue'
+    }),
+  ],
+})
+
+```
+
+<br></details>
+
+<details>
+<summary>Vue3</summary><br>
+
+```ts
+// vite.config.ts
+import { defineConfig } from 'vite'
+import Vue from '@vitejs/plugin-vue'
+import OpenIde from 'vite-plugin-open-ide'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [
+    Vue(),
+    OpenIde({
+      framework:'vue'
+    }),
+  ],
+})
+```
+
+<br></details>
+
+<details>
+<summary>React</summary><br>
+
+```ts
+// vite.config.ts
+import { defineConfig } from 'vite'
+import React from '@vitejs/plugin-react'
+import OpenIde from 'vite-plugin-open-ide'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [
+    React(),
+    OpenIde({
+      framework:'react'
+    }),
+  ],
+})
+
+```
+
+<br></details>
+
+<details>
+<summary>PReact</summary><br>
+
+```ts
+// vite.config.ts
+import { defineConfig } from 'vite'
+import Preact from '@preact/preset-vite'
+import OpenIde from 'vite-plugin-open-ide'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [
+    Preact(),
+    OpenIde({
+      framework:'preact'
+    }),
+  ],
+})
+```
+
+<br></details>
+
+<details>
+<summary>Solid</summary><br>
+
+```ts
+// vite.config.ts
+import { defineConfig } from 'vite';
+import SolidPlugin from 'vite-plugin-solid';
+import OpenIde from 'vite-plugin-open-ide'
+
+export default defineConfig({
+  plugins: [
+    SolidPlugin(),
+    OpenIde({
+      framework:'solid'
+    }),
+  ],
+  build: {
+    target: 'esnext',
+  },
+})
+```
+
+<br></details>
+
 ## Config
 
 ```ts

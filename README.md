@@ -23,6 +23,7 @@ https://user-images.githubusercontent.com/43719490/223932417-35b4195a-71cd-4df1-
 | React | [Example](./playground/react)|
 | PReact | [Example](./playground/preact)|
 | Solid | [Example](./playground/solid)|
+| Svelte | [Example](./playground/svelte)|
 
 ## Install
 
@@ -42,10 +43,10 @@ import OpenIde from 'vite-plugin-open-ide'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    Vue(),
     OpenIde({
       framework:'vue'
     }),
+    Vue(),
   ],
 })
 
@@ -65,10 +66,10 @@ import OpenIde from 'vite-plugin-open-ide'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    Vue(),
     OpenIde({
       framework:'vue'
     }),
+    Vue(),
   ],
 })
 ```
@@ -87,10 +88,10 @@ import OpenIde from 'vite-plugin-open-ide'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    React(),
     OpenIde({
       framework:'react'
     }),
+    React(),
   ],
 })
 
@@ -110,10 +111,10 @@ import OpenIde from 'vite-plugin-open-ide'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    Preact(),
     OpenIde({
       framework:'preact'
     }),
+    Preact(),
   ],
 })
 ```
@@ -131,15 +132,38 @@ import OpenIde from 'vite-plugin-open-ide'
 
 export default defineConfig({
   plugins: [
-    SolidPlugin(),
     OpenIde({
       framework:'solid'
     }),
+    SolidPlugin(),
   ],
   build: {
     target: 'esnext',
   },
 })
+```
+
+<br></details>
+
+<details>
+<summary>Svelte</summary><br>
+
+```ts
+// vite.config.ts
+import { defineConfig } from 'vite'
+import { svelte } from '@sveltejs/vite-plugin-svelte'
+import openIde from 'vite-plugin-open-ide'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [
+    openIde({
+      framework: 'svelte'
+    }),
+    svelte(),
+  ],
+})
+
 ```
 
 <br></details>

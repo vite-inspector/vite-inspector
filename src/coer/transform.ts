@@ -1,7 +1,6 @@
 import path from 'node:path'
 import fs from 'fs-extra'
 import compilerVue from './compiler/vue'
-import compilerSvelte from './compiler/svelte'
 
 function addHtmlAttr(filename: string, line: string, loc: number) {
   // match a single div, no attr <div></div>

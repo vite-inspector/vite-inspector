@@ -6,10 +6,10 @@ import OpenIde from 'vite-plugin-open-ide'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    React(),
-    Inspect(),
     OpenIde({
       framework:'react'
     }),
+    React(),
+    Inspect(),
   ],
 })

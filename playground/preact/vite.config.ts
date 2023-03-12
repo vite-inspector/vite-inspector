@@ -5,10 +5,10 @@ import OpenIde from 'vite-plugin-open-ide'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    Preact(),
-    Inspect(),
     OpenIde({
       framework:'preact'
     }),
+    Preact(),
+    Inspect(),
   ],
 })

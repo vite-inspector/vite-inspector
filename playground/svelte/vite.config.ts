@@ -6,10 +6,10 @@ import openIde from 'vite-plugin-open-ide'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    svelte(),
-    inspect(),
     openIde({
       framework: 'svelte'
-    })
+    }),
+    svelte(),
+    inspect(),
   ],
 })

@@ -5,11 +5,11 @@ import OpenIde from 'vite-plugin-open-ide'
 
 export default defineConfig({
   plugins: [
-    SolidPlugin(),
-    Inspect(),
     OpenIde({
       framework:'solid'
     }),
+    SolidPlugin(),
+    Inspect(),
   ],
   build: {
     target: 'esnext',

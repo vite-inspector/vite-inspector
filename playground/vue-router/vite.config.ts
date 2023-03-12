@@ -18,6 +18,9 @@ export default defineConfig({
     },
   },
   plugins: [
+    OpenIde({
+      framework:'vue'
+    }),
     Vue(),
 
     // https://github.com/hannoeru/vite-plugin-pages
@@ -53,9 +56,6 @@ export default defineConfig({
     // see unocss.config.ts for config
     UnoCss(),
     Inspect(),
-    OpenIde({
-      framework:'vue'
-    }),
   ],
   test: {
     environment: 'happy-dom',

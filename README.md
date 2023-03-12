@@ -12,7 +12,7 @@ https://user-images.githubusercontent.com/43719490/223932417-35b4195a-71cd-4df1-
 - [x] Support React
 - [x] Support PReact
 - [x] Support Solid
-- [ ] Support Svelte
+- [x] Support Svelte
 
 ## Examples
 

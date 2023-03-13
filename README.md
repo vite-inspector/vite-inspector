@@ -185,6 +185,20 @@ export default defineConfig({
 })
 ```
 
+## Credits
+
+Thanks to:
+
+- [@webfansplz/vite-plugin-vue-inspector](https://github.com/webfansplz/vite-plugin-vue-inspector)
+
+- [@zthxxx/react-dev-inspector](https://github.com/zthxxx/react-dev-inspector)
+
+- [vite-plugin-svelte-inspector](https://github.com/sveltejs/vite-plugin-svelte/tree/main/packages/vite-plugin-svelte/src/ui/inspector)
+
+- [@sudongyuer/vite-plugin-react-inspector](https://github.com/sudongyuer/vite-plugin-react-inspector)
+
+- [@songjiachao/vite-plugin-inspector](https://github.com/songjiachao/vite-plugin-inspector)
+
 ## License
 
 [MIT](./LICENSE) License © 2023 [Elone Hoo](https://github.com/elonehoo)

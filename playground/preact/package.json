@@ -6,8 +6,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "preact": "^10.13.0",
-    "vite-plugin-inspect": "^0.7.15",
+    "preact": "^10.13.1",
+    "vite-plugin-inspect": "^0.7.16",
     "vite-plugin-open-ide": "workspace:*"
   },
   "devDependencies": {

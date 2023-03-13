@@ -175,14 +175,14 @@ importers:
       vite: ^4.1.4
       vite-plugin-inspect: ^0.7.16
       vite-plugin-open-ide: workspace:*
-      vue: ^2.7.14
+      vue: ^3.2.47
       vue-tsc: ^1.2.0
     dependencies:
       vite-plugin-inspect: 0.7.16_vite@4.1.4
       vite-plugin-open-ide: link:../..
-      vue: 2.7.14
+      vue: 3.2.47
     devDependencies:
-      '@vitejs/plugin-vue2': 2.2.0_vite@4.1.4+vue@2.7.14
+      '@vitejs/plugin-vue2': 2.2.0_vite@4.1.4+vue@3.2.47
       typescript: 4.9.5
       vite: 4.1.4
       vue-tsc: 1.2.0_typescript@4.9.5
@@ -1827,7 +1827,7 @@ packages:
       vue: 3.2.47
     dev: true
 
-  /@vitejs/plugin-vue2/2.2.0_vite@4.1.4+vue@2.7.14:
+  /@vitejs/plugin-vue2/2.2.0_vite@4.1.4+vue@3.2.47:
     resolution: {integrity: sha512-1km7zEuZ/9QRPvzXSjikbTYGQPG86Mq1baktpC4sXqsXlb02HQKfi+fl8qVS703JM7cgm24Ga9j+RwKmvFn90A==}
     engines: {node: ^14.18.0 || >= 16.0.0}
     peerDependencies:
@@ -1835,7 +1835,7 @@ packages:
       vue: ^2.7.0-0
     dependencies:
       vite: 4.1.4
-      vue: 2.7.14
+      vue: 3.2.47
     dev: true
 
   /@vitest/coverage-c8/0.29.2_vitest@0.29.2:
@@ -1943,13 +1943,6 @@ packages:
     dependencies:
       '@vue/compiler-core': 3.2.47
       '@vue/shared': 3.2.47
-
-  /@vue/compiler-sfc/2.7.14:
-    resolution: {integrity: sha512-aNmNHyLPsw+sVvlQFQ2/8sjNuLtK54TC6cuKnVzAY93ks4ZBrvwQSnkkIh7bsbNhum5hJBS00wSDipQ937f5DA==}
-    dependencies:
-      '@babel/parser': 7.21.2
-      postcss: 8.4.21
-      source-map: 0.6.1
 
   /@vue/compiler-sfc/3.2.47:
     resolution: {integrity: sha512-rog05W+2IFfxjMcFw10tM9+f7i/+FFpZJJ5XHX72NP9eC2uRD+42M3pYcQqDXVYoj74kHMSEdQ/WmCjt8JFksQ==}
@@ -6090,12 +6083,6 @@ packages:
       '@volar/vue-typescript': 1.2.0
       typescript: 4.9.5
     dev: true
-
-  /vue/2.7.14:
-    resolution: {integrity: sha512-b2qkFyOM0kwqWFuQmgd4o+uHGU7T+2z3T+WQp8UBjADfEv2n4FEMffzBmCKNP0IGzOEEfYjvtcC62xaSKeQDrQ==}
-    dependencies:
-      '@vue/compiler-sfc': 2.7.14
-      csstype: 3.1.1
 
   /vue/3.2.47:
     resolution: {integrity: sha512-60188y/9Dc9WVrAZeUVSDxRQOZ+z+y5nO2ts9jWXSTkMvayiWxCWOWtBQoYjLeccfXkiiPZWAHcV+WTPhkqJHQ==}

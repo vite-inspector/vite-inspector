@@ -2,9 +2,14 @@ import OpenIde from 'vite-plugin-open-ide'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  modules:[
+    '@nuxt/devtools'
+  ],
   vite:{
     plugins:[
-      OpenIde({framework:'vue'})
+      OpenIde({
+        framework:'vue'
+      }),
     ]
   }
 })

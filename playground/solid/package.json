@@ -8,13 +8,13 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^5.0.2",
+    "typescript": "^5.0.4",
     "vite": "^4.2.1",
-    "vite-plugin-solid": "^2.6.1"
+    "vite-plugin-solid": "^2.7.0"
   },
   "dependencies": {
-    "solid-js": "^1.6.15",
-    "vite-plugin-inspect": "^0.7.18",
+    "solid-js": "^1.7.3",
+    "vite-plugin-inspect": "^0.7.19",
     "vite-plugin-open-ide": "workspace:*"
   }
 }

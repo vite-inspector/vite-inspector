@@ -9,7 +9,7 @@ import SfcName from 'unplugin-vue-sfc-name/vite'
 import UnoCss from 'unocss/vite'
 import Pages from 'vite-plugin-pages'
 import Inspect from 'vite-plugin-inspect'
-import OpenIde from 'vite-plugin-open-ide'
+import OpenIde from 'vite-inspector'
 
 export default defineConfig({
   resolve: {

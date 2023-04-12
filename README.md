@@ -1,6 +1,6 @@
-# vite-plugin-open-ide
+# vite-inspector
 
-[![NPM version](https://img.shields.io/npm/v/vite-plugin-open-ide?color=a1b858&label=)](https://www.npmjs.com/package/vite-plugin-open-ide)
+[![NPM version](https://img.shields.io/npm/v/vite-inspector?color=a1b858&label=)](https://www.npmjs.com/package/vite-inspector)
 
 > Jump to the local IDE source code while clicking the element of the browser automatically.
 
@@ -28,7 +28,7 @@ https://user-images.githubusercontent.com/43719490/223932417-35b4195a-71cd-4df1-
 ## Install
 
 ```bash
-pnpm install vite-plugin-open-ide -D
+pnpm install vite-inspector -D
 ```
 
 <details>
@@ -38,7 +38,7 @@ pnpm install vite-plugin-open-ide -D
 // vite.config.ts
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue2'
-import OpenIde from 'vite-plugin-open-ide'
+import OpenIde from 'vite-inspector'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -61,7 +61,7 @@ export default defineConfig({
 // vite.config.ts
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
-import OpenIde from 'vite-plugin-open-ide'
+import OpenIde from 'vite-inspector'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -83,7 +83,7 @@ export default defineConfig({
 // vite.config.ts
 import { defineConfig } from 'vite'
 import React from '@vitejs/plugin-react'
-import OpenIde from 'vite-plugin-open-ide'
+import OpenIde from 'vite-inspector'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -106,7 +106,7 @@ export default defineConfig({
 // vite.config.ts
 import { defineConfig } from 'vite'
 import Preact from '@preact/preset-vite'
-import OpenIde from 'vite-plugin-open-ide'
+import OpenIde from 'vite-inspector'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -128,7 +128,7 @@ export default defineConfig({
 // vite.config.ts
 import { defineConfig } from 'vite';
 import SolidPlugin from 'vite-plugin-solid';
-import OpenIde from 'vite-plugin-open-ide'
+import OpenIde from 'vite-inspector'
 
 export default defineConfig({
   plugins: [
@@ -152,7 +152,7 @@ export default defineConfig({
 // vite.config.ts
 import { defineConfig } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
-import openIde from 'vite-plugin-open-ide'
+import openIde from 'vite-inspector'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -173,7 +173,7 @@ export default defineConfig({
 ```ts
 // vite.config.ts
 import { defineConfig } from 'vite'
-import OpenIde from 'vite-plugin-open-ide'
+import OpenIde from 'vite-inspector'
 
 // https://vitejs.dev/config/
 export default defineConfig({

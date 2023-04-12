@@ -1,4 +1,4 @@
-import OpenIde from 'vite-plugin-open-ide'
+import OpenIde from 'vite-inspector'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({

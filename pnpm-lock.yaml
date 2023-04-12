@@ -44,7 +44,7 @@ importers:
 
   playground/nuxt:
     dependencies:
-      vite-plugin-open-ide:
+      vite-inspector:
         specifier: workspace:*
         version: link:../..
     devDependencies:
@@ -63,12 +63,12 @@ importers:
       preact:
         specifier: ^10.13.2
         version: 10.13.2
+      vite-inspector:
+        specifier: workspace:*
+        version: link:../..
       vite-plugin-inspect:
         specifier: ^0.7.19
         version: 0.7.19(vite@4.2.1)
-      vite-plugin-open-ide:
-        specifier: workspace:*
-        version: link:../..
     devDependencies:
       '@preact/preset-vite':
         specifier: ^2.5.0
@@ -88,12 +88,12 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
+      vite-inspector:
+        specifier: workspace:*
+        version: link:../..
       vite-plugin-inspect:
         specifier: ^0.7.19
         version: 0.7.19(vite@4.2.1)
-      vite-plugin-open-ide:
-        specifier: workspace:*
-        version: link:../..
     devDependencies:
       '@types/react':
         specifier: ^18.0.34
@@ -116,12 +116,12 @@ importers:
       solid-js:
         specifier: ^1.7.3
         version: 1.7.3
+      vite-inspector:
+        specifier: workspace:*
+        version: link:../..
       vite-plugin-inspect:
         specifier: ^0.7.19
         version: 0.7.19(vite@4.2.1)
-      vite-plugin-open-ide:
-        specifier: workspace:*
-        version: link:../..
     devDependencies:
       typescript:
         specifier: ^5.0.4
@@ -135,12 +135,12 @@ importers:
 
   playground/svelte:
     dependencies:
+      vite-inspector:
+        specifier: workspace:*
+        version: link:../..
       vite-plugin-inspect:
         specifier: ^0.7.19
         version: 0.7.19(vite@4.2.1)
-      vite-plugin-open-ide:
-        specifier: workspace:*
-        version: link:../..
     devDependencies:
       '@sveltejs/vite-plugin-svelte':
         specifier: ^2.0.4
@@ -175,12 +175,12 @@ importers:
       unocss:
         specifier: ^0.51.2
         version: 0.51.2(postcss@8.4.21)(vite@4.2.1)
+      vite-inspector:
+        specifier: workspace:*
+        version: link:../..
       vite-plugin-inspect:
         specifier: ^0.7.19
         version: 0.7.19(vite@4.2.1)
-      vite-plugin-open-ide:
-        specifier: workspace:*
-        version: link:../..
       vue:
         specifier: ^3.2.47
         version: 3.2.47
@@ -248,12 +248,12 @@ importers:
 
   playground/vue2:
     dependencies:
+      vite-inspector:
+        specifier: workspace:*
+        version: link:../..
       vite-plugin-inspect:
         specifier: ^0.7.19
         version: 0.7.19(vite@4.2.1)
-      vite-plugin-open-ide:
-        specifier: workspace:*
-        version: link:../..
       vue:
         specifier: ^2.7.14
         version: 2.7.14
@@ -273,12 +273,12 @@ importers:
 
   playground/vue3:
     dependencies:
+      vite-inspector:
+        specifier: workspace:*
+        version: link:../..
       vite-plugin-inspect:
         specifier: ^0.7.19
         version: 0.7.19(vite@4.2.1)
-      vite-plugin-open-ide:
-        specifier: workspace:*
-        version: link:../..
       vue:
         specifier: ^3.2.47
         version: 3.2.47

@@ -8,12 +8,10 @@ const DEFAULT_INSPECTOR_OPTIONS: VitePluginOpenIdeOptions = {
 }
 
 export default function (options?: VitePluginOpenIdeOptions): Plugin {
-  // 合并默认参数
+  // Merge default parameters
   const normalizedOptions = { ...DEFAULT_INSPECTOR_OPTIONS, ...options }
-  // 文件路径太长，影响页面dom查看效率，使用路径对应6位hash值较为美观
-  // const filePathMap = new Map()
   return {
-    name: 'vite-plugin-open-ide',
+    name: 'vite-inspector',
     enforce: 'pre',
     apply: 'serve',
     transformIndexHtml: {

@@ -54,7 +54,7 @@
     "@types/shell-quote": "^1.7.1",
     "bumpp": "^9.1.0",
     "eslint": "^8.38.0",
-    "tsup": "^6.7.0",
+    "tsup": "^7.1.0",
     "typescript": "^5.0.4",
     "vite": "^4.2.1"
   }

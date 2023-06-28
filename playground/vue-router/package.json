@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@unocss/reset": "^0.51.2",
-    "@vueuse/core": "^9.13.0",
+    "@vueuse/core": "^10.2.1",
     "unocss": "^0.51.2",
     "vite-plugin-inspect": "^0.7.19",
     "vite-inspector": "workspace:*",

@@ -8,16 +8,16 @@
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^2.0.4",
-    "@tsconfig/svelte": "^4.0.1",
-    "svelte": "^3.58.0",
-    "svelte-check": "^3.2.0",
-    "tslib": "^2.5.0",
-    "typescript": "^5.0.4",
-    "vite": "^4.2.1"
+    "@sveltejs/vite-plugin-svelte": "^2.4.2",
+    "@tsconfig/svelte": "^5.0.0",
+    "svelte": "^4.0.4",
+    "svelte-check": "^3.4.4",
+    "tslib": "^2.6.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.3.9"
   },
   "dependencies": {
-    "vite-plugin-inspect": "^0.7.19",
-    "vite-inspector": "workspace:*"
+    "vite-inspector": "workspace:*",
+    "vite-plugin-inspect": "^0.7.32"
   }
 }

@@ -11,7 +11,7 @@ function middleware(req: any, res: any, next: any) {
   const [filePath, lineNumber] = loc.split(':')
   const cwd = process.cwd()
   try {
-    openEditor(path.join(cwd, filePath), parseInt(lineNumber))
+    openEditor(path.join(cwd, filePath), Number.parseInt(lineNumber))
     res.statusCode = 200
     res.end('ok')
   }

@@ -7,9 +7,9 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^0.7.0",
-    "nuxt": "^3.6.5",
-    "vite-plugin-inspect": "^0.7.33"
+    "@nuxt/devtools": "^0.8.3",
+    "nuxt": "^3.7.3",
+    "vite-plugin-inspect": "^0.7.38"
   },
   "dependencies": {
     "vite-inspector": "workspace:*"

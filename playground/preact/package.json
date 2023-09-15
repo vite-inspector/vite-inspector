@@ -6,13 +6,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "preact": "^10.16.0",
+    "preact": "^10.17.1",
     "vite-inspector": "workspace:*",
-    "vite-plugin-inspect": "^0.7.33"
+    "vite-plugin-inspect": "^0.7.38"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.5.0",
-    "typescript": "^5.1.6",
-    "vite": "^4.4.6"
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
   }
 }

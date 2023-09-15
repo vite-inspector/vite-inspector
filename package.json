@@ -48,14 +48,14 @@
     "shell-quote": "^1.8.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.39.8",
-    "@types/fs-extra": "^11.0.1",
-    "@types/node": "^20.4.4",
+    "@antfu/eslint-config": "^0.42.0",
+    "@types/fs-extra": "^11.0.2",
+    "@types/node": "^20.6.0",
     "@types/shell-quote": "^1.7.1",
-    "bumpp": "^9.1.1",
-    "eslint": "^8.45.0",
-    "tsup": "^7.1.0",
-    "typescript": "^5.1.6",
-    "vite": "^4.4.6"
+    "bumpp": "^9.2.0",
+    "eslint": "^8.49.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.9"
   }
 }

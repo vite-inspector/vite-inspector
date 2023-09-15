@@ -4,6 +4,7 @@ import process from 'node:process'
 import openEditor from './open-ide'
 
 function middleware(req: any, res: any, next: any) {
+  /* eslint-disable n/no-deprecated-api */
   const queryParams = url.parse(req.url!, true)
   const loc = queryParams.query.loc as string
   if (!loc)

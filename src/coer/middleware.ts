@@ -1,5 +1,6 @@
 import url from 'node:url'
 import path from 'node:path'
+import process from 'node:process'
 import openEditor from './open-ide'
 
 function middleware(req: any, res: any, next: any) {

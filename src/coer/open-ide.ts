@@ -2,6 +2,7 @@
 
 import fs from 'node:fs'
 import path from 'node:path'
+import process from 'node:process'
 import child_process from 'node:child_process'
 import os from 'node:os'
 import shellQuote from 'shell-quote'

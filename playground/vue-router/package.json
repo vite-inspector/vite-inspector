@@ -34,7 +34,7 @@
     "@vue/test-utils": "^2.4.1",
     "bumpp": "^9.2.0",
     "eslint": "^8.49.0",
-    "happy-dom": "^11.2.0",
+    "happy-dom": "^12.1.5",
     "typescript": "^5.2.2",
     "unplugin-auto-import-api": "^0.0.2",
     "unplugin-vue-components": "^0.25.2",

@@ -6,7 +6,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "preact": "^10.17.1",
+    "preact": "^10.18.0",
     "vite-inspector": "workspace:*",
     "vite-plugin-inspect": "^0.7.38"
   },

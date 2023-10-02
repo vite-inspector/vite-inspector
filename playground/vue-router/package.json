@@ -20,7 +20,7 @@
     "@vueuse/core": "^10.4.1",
     "unocss": "^0.56.4",
     "vite-inspector": "workspace:*",
-    "vite-plugin-inspect": "^0.7.38",
+    "vite-plugin-inspect": "^0.7.39",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },
@@ -34,7 +34,7 @@
     "@vue/test-utils": "^2.4.1",
     "bumpp": "^9.2.0",
     "eslint": "^8.50.0",
-    "happy-dom": "^12.4.0",
+    "happy-dom": "^12.5.0",
     "typescript": "^5.2.2",
     "unplugin-auto-import-api": "^0.0.2",
     "unplugin-vue-components": "^0.25.2",

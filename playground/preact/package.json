@@ -6,9 +6,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "preact": "^10.18.0",
+    "preact": "^10.18.1",
     "vite-inspector": "workspace:*",
-    "vite-plugin-inspect": "^0.7.38"
+    "vite-plugin-inspect": "^0.7.39"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.5.0",

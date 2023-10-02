@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "vite-inspector": "workspace:*",
-    "vite-plugin-inspect": "^0.7.38",
+    "vite-plugin-inspect": "^0.7.39",
     "vue": "^2.7.14"
   },
   "devDependencies": {

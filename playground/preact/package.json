@@ -8,11 +8,11 @@
   "dependencies": {
     "preact": "^10.18.1",
     "vite-inspector": "workspace:*",
-    "vite-plugin-inspect": "^0.7.39"
+    "vite-plugin-inspect": "^0.7.40"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.5.0",
     "typescript": "^5.2.2",
-    "vite": "^4.4.9"
+    "vite": "^4.4.11"
   }
 }

@@ -50,12 +50,12 @@
   "devDependencies": {
     "@antfu/eslint-config": "^0.43.1",
     "@types/fs-extra": "^11.0.2",
-    "@types/node": "^20.8.0",
+    "@types/node": "^20.8.3",
     "@types/shell-quote": "^1.7.2",
     "bumpp": "^9.2.0",
-    "eslint": "^8.50.0",
+    "eslint": "^8.51.0",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2",
-    "vite": "^4.4.9"
+    "vite": "^4.4.11"
   }
 }

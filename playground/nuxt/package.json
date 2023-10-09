@@ -9,7 +9,7 @@
   "devDependencies": {
     "@nuxt/devtools": "^0.8.5",
     "nuxt": "^3.7.4",
-    "vite-plugin-inspect": "^0.7.39"
+    "vite-plugin-inspect": "^0.7.40"
   },
   "dependencies": {
     "vite-inspector": "workspace:*"

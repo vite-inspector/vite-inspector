@@ -13,8 +13,8 @@
     "vite-plugin-solid": "^2.7.2"
   },
   "dependencies": {
-    "solid-js": "^1.8.3",
+    "solid-js": "^1.8.4",
     "vite-inspector": "workspace:*",
-    "vite-plugin-inspect": "^0.7.40"
+    "vite-plugin-inspect": "^0.7.41"
   }
 }

@@ -8,7 +8,7 @@
   "dependencies": {
     "preact": "^10.18.1",
     "vite-inspector": "workspace:*",
-    "vite-plugin-inspect": "^0.7.40"
+    "vite-plugin-inspect": "^0.7.41"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.6.0",

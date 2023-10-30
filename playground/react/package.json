@@ -9,10 +9,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "vite-inspector": "workspace:*",
-    "vite-plugin-inspect": "^0.7.40"
+    "vite-plugin-inspect": "^0.7.41"
   },
   "devDependencies": {
-    "@types/react": "^18.2.31",
+    "@types/react": "^18.2.33",
     "@types/react-dom": "^18.2.14",
     "@vitejs/plugin-react": "^4.1.0",
     "typescript": "^5.2.2",

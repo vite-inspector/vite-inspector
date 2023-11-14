@@ -48,10 +48,10 @@
     "shell-quote": "^1.8.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.43.1",
-    "@types/fs-extra": "^11.0.3",
-    "@types/node": "^20.8.10",
-    "@types/shell-quote": "^1.7.3",
+    "@antfu/eslint-config": "^1.1.1",
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.9.0",
+    "@types/shell-quote": "^1.7.4",
     "bumpp": "^9.2.0",
     "eslint": "^8.53.0",
     "tsup": "^7.2.0",

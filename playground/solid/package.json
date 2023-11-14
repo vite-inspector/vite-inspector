@@ -15,6 +15,6 @@
   "dependencies": {
     "solid-js": "^1.8.5",
     "vite-inspector": "workspace:*",
-    "vite-plugin-inspect": "^0.7.41"
+    "vite-plugin-inspect": "^0.7.42"
   }
 }

@@ -7,7 +7,7 @@ import OpenIde from 'vite-inspector'
 export default defineConfig({
   plugins: [
     OpenIde({
-      framework:'vue'
+      framework: 'vue',
     }),
     Vue(),
     Inspect(),

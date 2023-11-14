@@ -7,7 +7,7 @@ import openIde from 'vite-inspector'
 export default defineConfig({
   plugins: [
     openIde({
-      framework: 'svelte'
+      framework: 'svelte',
     }),
     svelte(),
     inspect(),

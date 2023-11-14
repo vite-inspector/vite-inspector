@@ -44,12 +44,11 @@ import OpenIde from 'vite-inspector'
 export default defineConfig({
   plugins: [
     OpenIde({
-      framework:'vue'
+      framework: 'vue'
     }),
     Vue(),
   ],
 })
-
 ```
 
 <br></details>
@@ -67,7 +66,7 @@ import OpenIde from 'vite-inspector'
 export default defineConfig({
   plugins: [
     OpenIde({
-      framework:'vue'
+      framework: 'vue'
     }),
     Vue(),
   ],
@@ -89,12 +88,11 @@ import OpenIde from 'vite-inspector'
 export default defineConfig({
   plugins: [
     OpenIde({
-      framework:'react'
+      framework: 'react'
     }),
     React(),
   ],
 })
-
 ```
 
 <br></details>
@@ -112,7 +110,7 @@ import OpenIde from 'vite-inspector'
 export default defineConfig({
   plugins: [
     OpenIde({
-      framework:'preact'
+      framework: 'preact'
     }),
     Preact(),
   ],
@@ -126,14 +124,14 @@ export default defineConfig({
 
 ```ts
 // vite.config.ts
-import { defineConfig } from 'vite';
-import SolidPlugin from 'vite-plugin-solid';
+import { defineConfig } from 'vite'
+import SolidPlugin from 'vite-plugin-solid'
 import OpenIde from 'vite-inspector'
 
 export default defineConfig({
   plugins: [
     OpenIde({
-      framework:'solid'
+      framework: 'solid'
     }),
     SolidPlugin(),
   ],
@@ -163,7 +161,6 @@ export default defineConfig({
     svelte(),
   ],
 })
-
 ```
 
 <br></details>

@@ -18,10 +18,16 @@ export function App() {
       <h1>Vite + Preact</h1>
       <div class="card">
         <button onClick={() => setCount(count => count + 1)}>
-          count is {count}
+          count is
+          {' '}
+          {count}
         </button>
         <p>
-          Edit <code>src/app.tsx</code> and save to test HMR
+          Edit
+          {' '}
+          <code>src/app.tsx</code>
+          {' '}
+          and save to test HMR
         </p>
       </div>
       <p class="read-the-docs">

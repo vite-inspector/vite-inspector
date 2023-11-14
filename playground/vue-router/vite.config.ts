@@ -19,7 +19,7 @@ export default defineConfig({
   },
   plugins: [
     OpenIde({
-      framework:'vue'
+      framework: 'vue',
     }),
     Vue(),
 

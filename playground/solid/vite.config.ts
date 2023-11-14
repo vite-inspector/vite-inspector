@@ -1,12 +1,12 @@
-import { defineConfig } from 'vite';
-import SolidPlugin from 'vite-plugin-solid';
+import { defineConfig } from 'vite'
+import SolidPlugin from 'vite-plugin-solid'
 import Inspect from 'vite-plugin-inspect'
 import OpenIde from 'vite-inspector'
 
 export default defineConfig({
   plugins: [
     OpenIde({
-      framework:'solid'
+      framework: 'solid',
     }),
     SolidPlugin(),
     Inspect(),
@@ -14,4 +14,4 @@ export default defineConfig({
   build: {
     target: 'esnext',
   },
-});
+})

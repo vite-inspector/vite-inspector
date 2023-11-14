@@ -1,7 +1,7 @@
 import { mount } from '@vue/test-utils'
 import TheCounter from '~/components/counter/TheCounter.vue'
 
-describe('TheCounter.vue', () => {
+describe('theCounter.vue', () => {
   it('should render', () => {
     const wrapper = mount(TheCounter, { props: { initial: 10 } })
     expect(wrapper.text()).toContain('10')

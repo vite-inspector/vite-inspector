@@ -1,6 +1,5 @@
 {
   "name": "vite-inspector",
-  "type": "module",
   "version": "0.1.3",
   "description": "Jump to the local IDE source code while clicking the element of the browser automatically.",
   "author": "Elone Hoo <hi@elonehoo.me>",

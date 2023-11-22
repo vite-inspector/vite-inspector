@@ -15,8 +15,8 @@ export default function (options?: VitePluginOpenIdeOptions): Plugin {
     enforce: 'pre',
     apply: 'serve',
     transformIndexHtml: {
-      enforce: 'pre',
-      transform() {
+      order: 'pre',
+      handler() {
         return [{
           tag: 'script',
           children: injectScript(normalizedOptions),

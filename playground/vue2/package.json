@@ -8,12 +8,12 @@
   "dependencies": {
     "vite-inspector": "workspace:*",
     "vite-plugin-inspect": "^0.7.42",
-    "vue": "^2.7.15"
+    "vue": "^3.3.8"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue2": "^2.2.0",
-    "typescript": "^5.2.2",
-    "vite": "^4.5.0",
+    "@vitejs/plugin-vue2": "^2.3.1",
+    "typescript": "^5.3.2",
+    "vite": "^5.0.2",
     "vue-tsc": "^1.8.22"
   }
 }

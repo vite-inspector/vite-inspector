@@ -1,5 +1,6 @@
 {
   "name": "vite-inspector",
+  "type": "module",
   "version": "0.1.2",
   "description": "Jump to the local IDE source code while clicking the element of the browser automatically.",
   "author": "Elone Hoo <hi@elonehoo.me>",
@@ -48,14 +49,14 @@
     "shell-quote": "^1.8.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^1.1.1",
+    "@antfu/eslint-config": "^2.1.0",
     "@types/fs-extra": "^11.0.4",
-    "@types/node": "^20.9.0",
-    "@types/shell-quote": "^1.7.4",
+    "@types/node": "^20.9.4",
+    "@types/shell-quote": "^1.7.5",
     "bumpp": "^9.2.0",
-    "eslint": "^8.53.0",
-    "tsup": "^7.2.0",
-    "typescript": "^5.2.2",
-    "vite": "^4.5.0"
+    "eslint": "^8.54.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.2",
+    "vite": "^5.0.2"
   }
 }

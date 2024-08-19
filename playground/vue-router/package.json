@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "@unocss/reset": "^0.62.2",
-    "@vueuse/core": "^11.0.0",
+    "@vueuse/core": "^11.0.1",
     "unocss": "^0.62.2",
     "vite-inspector": "workspace:*",
     "vite-plugin-inspect": "^0.8.5",
@@ -27,7 +27,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^2.26.0",
     "@iconify-json/carbon": "^1.1.37",
-    "@types/node": "^22.4.0",
+    "@types/node": "^22.4.1",
     "@vitejs/plugin-vue": "^5.1.2",
     "@vitest/coverage-c8": "^0.33.0",
     "@vitest/ui": "^2.0.5",

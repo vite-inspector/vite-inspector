@@ -8,13 +8,13 @@
   },
   "dependencies": {
     "vite-inspector": "workspace:*",
-    "vite-plugin-inspect": "^0.8.5",
+    "vite-plugin-inspect": "^0.8.7",
     "vue": "^3.4.38"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.1.2",
     "typescript": "^5.5.4",
-    "vite": "^5.4.1",
+    "vite": "^5.4.2",
     "vue-tsc": "^2.0.29"
   }
 }

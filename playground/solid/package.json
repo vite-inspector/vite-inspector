@@ -8,7 +8,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "solid-js": "^1.9.1",
+    "solid-js": "^1.9.3",
     "vite-inspector": "workspace:*",
     "vite-plugin-inspect": "^0.8.7"
   },

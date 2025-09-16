@@ -10,7 +10,7 @@ function addHtmlAttr(filename: string, line: string, loc: number) {
   const htmlTagReg2 = /<(\w+)\s+([\w|:])/g
   // stitching html parameters fileName: location
   const replaceValue = (_whole: string, tag: string, rest: string) => {
-    let locAttr = ` data-loc="${filename.replace(cwd, '')}:${loc}" `
+    const locAttr = ` data-loc="${filename.replace(cwd, '')}:${loc}" `
     return `<${tag}${tag !== 'title' ? locAttr : ''}${rest}`
   }
   const result = line.replace(htmlTagReg2, replaceValue)

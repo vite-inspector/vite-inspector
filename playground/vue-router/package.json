@@ -42,7 +42,7 @@
     "unplugin-vue-sfc-name": "^0.0.9",
     "vite": "^5.4.8",
     "vite-plugin-pages": "^0.32.3",
-    "vitest": "^2.1.2",
+    "vitest": "^3.0.0",
     "vue-tsc": "^2.1.6"
   }
 }

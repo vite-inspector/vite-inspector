@@ -15,7 +15,7 @@ function addHtmlAttr(filename: string, line: string, loc: number) {
   return result
 }
 
-function generate(id: string, code: string, html?: { content: string; start: number; end: number }) {
+function generate(id: string, code: string, html?: { content: string, start: number, end: number }) {
   // if no template is passed in, the entire content of the file will be parsed
   if (!html) {
     html = {

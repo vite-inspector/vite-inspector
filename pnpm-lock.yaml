@@ -204,8 +204,8 @@ importers:
         specifier: ^9.39.5
         version: 9.39.5(jiti@1.21.6)(supports-color@7.2.0)
       happy-dom:
-        specifier: ^15.7.4
-        version: 15.7.4
+        specifier: ^20.0.0
+        version: 20.14.6
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -229,7 +229,7 @@ importers:
         version: 0.33.3(@vue/compiler-sfc@3.5.44)(supports-color@7.2.0)(vite@5.4.8(@types/node@22.20.5))(vue-router@4.6.4(vue@3.5.44(typescript@5.9.3)))
       vitest:
         specifier: ^2.1.2
-        version: 2.1.2(@types/node@22.20.5)(@vitest/ui@2.1.9)(happy-dom@15.7.4)(supports-color@7.2.0)
+        version: 2.1.2(@types/node@22.20.5)(@vitest/ui@2.1.9)(happy-dom@20.14.6)(supports-color@7.2.0)
       vue-tsc:
         specifier: ^2.2.12
         version: 2.2.12(typescript@5.9.3)
@@ -1763,6 +1763,12 @@ packages:
   '@types/web-bluetooth@0.0.20':
     resolution: {integrity: sha512-g9gZnnXVq7gM7v3tJCWV/qw7w+KeOlSHAhgF9RytFyifW6AF61hdT2ucrYhPq9hLs5JIryeupHV3qGk95dH9ow==}
 
+  '@types/whatwg-mimetype@3.0.2':
+    resolution: {integrity: sha512-c2AKvDT8ToxLIOUlN51gTiHXflsfIFisS4pO7pDPoKouJCESkhZnEy623gwP9laCy5lnLDAw1vAzu2vM2YLOrA==}
+
+  '@types/ws@8.18.2':
+    resolution: {integrity: sha512-67MQl+fpWKVTT1NYdnmo3U4sc/xPo/zQBncVnI74qmQa0z/b+1g6iYqNmGCPbxO+zz2aklb08a0oHfegiVd0/w==}
+
   '@typescript-eslint/eslint-plugin@8.72.0':
     resolution: {integrity: sha512-aysKgysPX9XOv/dk95UkvUDe++Q3n3dJPG9CEWT3RUccxfkPJ+Qn6nhKPDhZXU6Ofo9kgwGWwKyQCnZIXTgngg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -2222,6 +2228,10 @@ packages:
     resolution: {integrity: sha512-2TcbbiwXEq+N0kD36tykpCfyyQigUXmuwNQbnPp4Xk4PX9JOqVIKjJlIDjpH7uY6tmRGoAd+apeT1p60T8wsdA==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
+
+  buffer-image-size@0.6.4:
+    resolution: {integrity: sha512-nEh+kZOPY1w+gcCMobZ6ETUp9WfibndnosbpwB1iJk/8Gt5ZF2bhS6+B6bPYz424KtwsR6Rflc3tCz1/ghX2dQ==}
+    engines: {node: '>=4.0'}
 
   builtin-modules@5.4.0:
     resolution: {integrity: sha512-JCWSCdun+4Ovd9BhM/Vtlmwb7oD6Wl4YiPRXXwhAuwlPhW1un/MKgXn7GZoFm53ginnoNzus69V8JWx0K393jg==}
@@ -3036,9 +3046,9 @@ packages:
     resolution: {integrity: sha512-ax7ZYomf6jqPTQ4+XCpUGyXKHk5WweS+e05MBO4/y3WJ5RkmPXNKvX+bx1behVILVwr6JSQvZAku021CHPXG3Q==}
     engines: {node: '>=10'}
 
-  happy-dom@15.7.4:
-    resolution: {integrity: sha512-r1vadDYGMtsHAAsqhDuk4IpPvr6N8MGKy5ntBo7tSdim+pWDxus2PNqOcOt8LuDZ4t3KJHE+gCuzupcx/GKnyQ==}
-    engines: {node: '>=18.0.0'}
+  happy-dom@20.14.6:
+    resolution: {integrity: sha512-5DDsf4QmEIlRL6NkCv/fxSjYHHkZceL/IaYQdJc2h3G7DRTEai++VTjbfL0LB9geW2VrA3+vrjF3Efx+OTtX0Q==}
+    engines: {node: '>=20.0.0'}
 
   has-flag@3.0.0:
     resolution: {integrity: sha512-sKJf1+ceQBr4SMkvQnBDNDtf4TXpVhVGateu0t918bl30FnbE2m4vNLX+VWe/dpjlb+HugGYzW7uQXH98HPEYw==}
@@ -4585,10 +4595,6 @@ packages:
   web-worker@1.5.0:
     resolution: {integrity: sha512-RiMReJrTAiA+mBjGONMnjVDP2u3p9R1vkcGz6gDIrOMT3oGuYwX2WRMYI9ipkphSuE5XKEhydbhNEJh4NY9mlw==}
 
-  webidl-conversions@7.0.0:
-    resolution: {integrity: sha512-VwddBukDzu71offAQR975unBIGqfKZpM+8ZX6ySk8nYhVoo5CYaZyzt3YBvYtRtO+aoGlqxPg/B87NGVZ/fu6g==}
-    engines: {node: '>=12'}
-
   webpack-sources@3.2.3:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
     engines: {node: '>=10.13.0'}
@@ -4624,6 +4630,18 @@ packages:
 
   wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
+
+  ws@8.22.0:
+    resolution: {integrity: sha512-Ydggc987+RO0AnWtZ/7Wq9FtNvcrL1b/RO0ud9mWjUPgDrsAAwQSF51sm2hm1XofbU/4jkpGEsLFsZZxU+1DOg==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      bufferutil: ^4.0.1
+      utf-8-validate: '>=5.0.2'
+    peerDependenciesMeta:
+      bufferutil:
+        optional: true
+      utf-8-validate:
+        optional: true
 
   xml-name-validator@5.0.0:
     resolution: {integrity: sha512-EvGK8EJ3DhaHfbRlETOWAS5pO9MZITeauHKJyb8wyajUfQUenkIg2MvLDTZ4T/TgIcm3HU0TFBgWWboAZ30UHg==}
@@ -5894,6 +5912,12 @@ snapshots:
 
   '@types/web-bluetooth@0.0.20': {}
 
+  '@types/whatwg-mimetype@3.0.2': {}
+
+  '@types/ws@8.18.2':
+    dependencies:
+      '@types/node': 22.20.5
+
   '@typescript-eslint/eslint-plugin@8.72.0(@typescript-eslint/parser@8.72.0(eslint@9.39.5(jiti@1.21.6)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(jiti@1.21.6)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
@@ -6166,7 +6190,7 @@ snapshots:
       magic-string: 0.30.11
       picocolors: 1.0.1
       std-env: 3.7.0
-      vitest: 2.1.2(@types/node@22.20.5)(@vitest/ui@2.1.9)(happy-dom@15.7.4)(supports-color@7.2.0)
+      vitest: 2.1.2(@types/node@22.20.5)(@vitest/ui@2.1.9)(happy-dom@20.14.6)(supports-color@7.2.0)
 
   '@vitest/eslint-plugin@1.6.27(@typescript-eslint/eslint-plugin@8.72.0(@typescript-eslint/parser@8.72.0(eslint@9.39.5(jiti@1.21.6)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(jiti@1.21.6)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(jiti@1.21.6)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)(vitest@2.1.2)':
     dependencies:
@@ -6176,7 +6200,7 @@ snapshots:
     optionalDependencies:
       '@typescript-eslint/eslint-plugin': 8.72.0(@typescript-eslint/parser@8.72.0(eslint@9.39.5(jiti@1.21.6)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(jiti@1.21.6)(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
       typescript: 5.9.3
-      vitest: 2.1.2(@types/node@22.20.5)(@vitest/ui@2.1.2)(happy-dom@15.7.4)(supports-color@7.2.0)
+      vitest: 2.1.2(@types/node@22.20.5)(@vitest/ui@2.1.2)(happy-dom@20.14.6)(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -6227,7 +6251,7 @@ snapshots:
       sirv: 2.0.4
       tinyglobby: 0.2.17
       tinyrainbow: 1.2.0
-      vitest: 2.1.2(@types/node@22.20.5)(@vitest/ui@2.1.2)(happy-dom@15.7.4)(supports-color@7.2.0)
+      vitest: 2.1.2(@types/node@22.20.5)(@vitest/ui@2.1.2)(happy-dom@20.14.6)(supports-color@7.2.0)
     optional: true
 
   '@vitest/ui@2.1.9(vitest@2.1.2)':
@@ -6239,7 +6263,7 @@ snapshots:
       sirv: 3.0.2
       tinyglobby: 0.2.17
       tinyrainbow: 1.2.0
-      vitest: 2.1.2(@types/node@22.20.5)(@vitest/ui@2.1.9)(happy-dom@15.7.4)(supports-color@7.2.0)
+      vitest: 2.1.2(@types/node@22.20.5)(@vitest/ui@2.1.9)(happy-dom@20.14.6)(supports-color@7.2.0)
 
   '@vitest/utils@2.1.2':
     dependencies:
@@ -6535,6 +6559,10 @@ snapshots:
       electron-to-chromium: 1.5.462
       node-releases: 2.0.59
       update-browserslist-db: 1.3.4(browserslist@4.29.4)
+
+  buffer-image-size@0.6.4:
+    dependencies:
+      '@types/node': 22.20.5
 
   builtin-modules@5.4.0: {}
 
@@ -7504,11 +7532,18 @@ snapshots:
     dependencies:
       duplexer: 0.1.2
 
-  happy-dom@15.7.4:
+  happy-dom@20.14.6:
     dependencies:
-      entities: 4.5.0
-      webidl-conversions: 7.0.0
+      '@types/node': 22.20.5
+      '@types/whatwg-mimetype': 3.0.2
+      '@types/ws': 8.18.2
+      buffer-image-size: 0.6.4
+      entities: 7.0.1
       whatwg-mimetype: 3.0.0
+      ws: 8.22.0
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
 
   has-flag@3.0.0: {}
 
@@ -9184,7 +9219,7 @@ snapshots:
     optionalDependencies:
       vite: 5.4.1(@types/node@22.20.5)
 
-  vitest@2.1.2(@types/node@22.20.5)(@vitest/ui@2.1.2)(happy-dom@15.7.4)(supports-color@7.2.0):
+  vitest@2.1.2(@types/node@22.20.5)(@vitest/ui@2.1.2)(happy-dom@20.14.6)(supports-color@7.2.0):
     dependencies:
       '@vitest/expect': 2.1.2
       '@vitest/mocker': 2.1.2(@vitest/spy@2.1.2)(vite@5.4.8(@types/node@22.20.5))
@@ -9208,7 +9243,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.20.5
       '@vitest/ui': 2.1.2(vitest@2.1.2)
-      happy-dom: 15.7.4
+      happy-dom: 20.14.6
     transitivePeerDependencies:
       - less
       - lightningcss
@@ -9221,7 +9256,7 @@ snapshots:
       - terser
     optional: true
 
-  vitest@2.1.2(@types/node@22.20.5)(@vitest/ui@2.1.9)(happy-dom@15.7.4)(supports-color@7.2.0):
+  vitest@2.1.2(@types/node@22.20.5)(@vitest/ui@2.1.9)(happy-dom@20.14.6)(supports-color@7.2.0):
     dependencies:
       '@vitest/expect': 2.1.2
       '@vitest/mocker': 2.1.2(@vitest/spy@2.1.2)(vite@5.4.8(@types/node@22.20.5))
@@ -9245,7 +9280,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.20.5
       '@vitest/ui': 2.1.9(vitest@2.1.2)
-      happy-dom: 15.7.4
+      happy-dom: 20.14.6
     transitivePeerDependencies:
       - less
       - lightningcss
@@ -9304,8 +9339,6 @@ snapshots:
 
   web-worker@1.5.0: {}
 
-  webidl-conversions@7.0.0: {}
-
   webpack-sources@3.2.3: {}
 
   webpack-virtual-modules@0.6.2: {}
@@ -9336,6 +9369,8 @@ snapshots:
       strip-ansi: 7.1.0
 
   wrappy@1.0.2: {}
+
+  ws@8.22.0: {}
 
   xml-name-validator@5.0.0: {}
 

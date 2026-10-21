@@ -1,11 +1,9 @@
-import url from 'node:url'
 import path from 'node:path'
 import process from 'node:process'
 import openEditor from './open-ide'
 
 function middleware(req: any, res: any, next: any) {
-  const queryParams = url.parse(req.url!, true)
-  const loc = queryParams.query.loc as string
+  const loc = new URL(req.url!, 'http://localhost').searchParams.get('loc')
   if (!loc)
     return next()
 

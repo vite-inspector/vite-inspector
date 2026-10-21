@@ -1,2 +1,11 @@
+# CI installs pnpm@latest (v12). v12 rejects Renovate lockfiles unless the
+# 1-day release cooldown is off and dependency build scripts are approved.
+minimumReleaseAge: 0
+
 packages:
   - playground/*
+
+allowBuilds:
+  esbuild: true
+  unrs-resolver: true
+  vue-demi: true

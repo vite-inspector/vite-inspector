@@ -1,6 +1,6 @@
 import type { Plugin } from 'vite'
-import { injectScript, middleware, transform } from './coer'
 import type { VitePluginOpenIdeOptions } from './type'
+import { injectScript, middleware, transform } from './coer'
 
 const DEFAULT_INSPECTOR_OPTIONS: VitePluginOpenIdeOptions = {
   route: '/open-editor',

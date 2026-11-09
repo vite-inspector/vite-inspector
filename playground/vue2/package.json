@@ -8,7 +8,7 @@
   "dependencies": {
     "vite-inspector": "workspace:*",
     "vite-plugin-inspect": "^0.10.6",
-    "vue": "^3.5.44"
+    "vue": "^3.5.45"
   },
   "devDependencies": {
     "@vitejs/plugin-vue2": "^2.3.4",

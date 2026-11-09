@@ -52,7 +52,7 @@
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^22.20.5",
     "@types/shell-quote": "^1.7.5",
-    "bumpp": "^9.11.1",
+    "bumpp": "^12.3.0",
     "eslint": "^9.39.5",
     "tsup": "^8.5.1",
     "typescript": "^5.9.3",
